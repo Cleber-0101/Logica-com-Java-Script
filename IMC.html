@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<title> calculando imc </title>
+
+    
+
+ <script>
+        
+        //programa  que calcula o IMC ( indice de massa corporea )
+
+
+
+    function  pulaLinha  () {
+
+        document.write("<br")
+        document.write("<br")
+
+    }
+
+
+     function  mostra (frase) {
+
+      document.write(frase)
+      pulaLinha();
+
+ }
+
+   //segundo a organização da saude o imc é o peso vezes altura vezes altura 
+
+  var pesoCleber = 87;
+  var alturaCleber = 1.86;
+
+  var imcCleber = pesoCleber / (alturaCleber * alturaCleber )
+
+  mostra ("o imc do Cleber é" + imcCleber)
+
+  var pesoAmigo = 100;
+  var alturaAmigo = 1.70;
+
+  var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo )
+
+  mostra ("o imc do meu Amigo é" + imcAmigo)
+
+
+
+  </script>
