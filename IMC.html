@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<title> calculando imc </title>
+<title> calcula imc </title>
 
     
 
@@ -9,7 +9,7 @@
 
 
 
-    function  pulaLinha  () {
+     function  pulaLinha  () {
 
         document.write("<br")
         document.write("<br")
@@ -19,27 +19,34 @@
 
      function  mostra (frase) {
 
-      document.write(frase)
-      pulaLinha();
+       document.write(frase)
+       pulaLinha();
 
- }
+    }
 
-   //segundo a organização da saude o imc é o peso vezes altura vezes altura 
 
-  var pesoCleber = 87;
-  var alturaCleber = 1.86;
 
-  var imcCleber = pesoCleber / (alturaCleber * alturaCleber )
+     //function calculaImc() {
 
-  mostra ("o imc do Cleber é" + imcCleber)
+        //var imc = peso / (altura * altura)
 
-  var pesoAmigo = 100;
-  var alturaAmigo = 1.70;
+     
 
-  var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo )
+       function calculaImc ( altura,peso) {
+        var Imc = peso / (altura * altura );
+        mostra ("o imc de Cleber é " + Imc)
 
-  mostra ("o imc do meu Amigo é" + imcAmigo)
+        
+      }
 
+
+     var pesoCleber = 88;
+     var alturaCleber = 1.86;
+
+    calculaImc(1.86  ,  84 ); 
+
+
+         
 
 
   </script>
