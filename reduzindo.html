@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reduzindo mudanças </title>
+    <title>Reduzindo mudanças </title>
  </head>
 
 
@@ -13,13 +13,20 @@
 
       <script>
         
-          function pulaLinha() {
+           function pulaLinha() {  //criando uma função para pular linha 
+                
+               document.write ("<br>");
+               document.write ("<br>");
+               document.write ("<br>");
 
-            document.write ("<br>");
-            document.write ("<br>");
-            document.write ("<br>");
+           }
 
-          }
+           function mostra(frase) {    //criando uma função para mostrar uma frase 
+                
+               document.write (frase);
+               pulaLinha();  //chamando a função de uma outra função 
+
+           }
 
 
 
@@ -28,12 +35,17 @@
        //var pula = "<br><br>"  ; //criando uma variavel para pular linha quantas linhas quiaser
 
 
-        document.write ("A idade de cleber é "  + (ano-1999) + "anos" + "<br>" )
-        pulaLinha();
-        document.write ("A idade de  marcos é "  + (ano-1998) + "anos" + "<br>" )
-        pulaLinha();
-        document.write ("A idade de macelo é "  + (ano-1999) + "anos" + "<br>" )
-        pulaLinha();
+        //document.write ("A idade de cleber é "  + (ano-1999) + "anos" + "<br>" )
+        mostra("A idade de cleber é "  + (ano-1999) + "anos" + "<br>");
+       // document.write ("A idade de  marcos é "  + (ano-1998) + "anos" + "<br>" )
+        mostra("A idade de cleber é "  + (ano-1999) + "anos" + "<br>");
+      
+       // document.write ("A idade de macelo é "  + (ano-1999) + "anos" + "<br>" )
+        mostra("A idade de cleber é "  + (ano-1999) + "anos" + "<br>");
+      
+
+        //document.write ("ola pessoal")
+        mostra(ola);
 
        </script>
 
