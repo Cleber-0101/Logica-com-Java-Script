@@ -3,50 +3,39 @@
 
     
 
- <script>
+    <script>
         
         //programa  que calcula o IMC ( indice de massa corporea )
 
 
+ 
+       function  pulaLinha  () {
 
-     function  pulaLinha  () {
-
-        document.write("<br")
-        document.write("<br")
-
-    }
+        document.write("<br");
+        document.write("<br");
+      
+       }
 
 
-     function  mostra (frase) {
-
-       document.write(frase)
+       function  mostra (frase) {
+                                                     //pare na aula5/5
+       document.write(frase);
        pulaLinha();
 
-    }
+       }
 
 
+       function calculaImc (altura1,peso1,altura2,peso2){
 
-     //function calculaImc() {
+         var imc1 = peso1/ (altura1*altura1)
+         var imc2 = peso2 / (altura2*altura2)
+         var imcTotal = imc1 + imc2 ;
+         mostra ("a soma dos imc é "+ imcTotal );
 
-        //var imc = peso / (altura * altura)
+       }
 
-     
+                //parei na aula 5/5
 
-       function calculaImc ( altura,peso) {
-        var Imc = peso / (altura * altura );
-        mostra ("o imc de Cleber é " + Imc)
-
-        
-      }
-
-
-     var pesoCleber = 88;
-     var alturaCleber = 1.86;
-
-    calculaImc(1.86  ,  84 ); 
-
-
-         
-
-
-  </script>
+          calculaImc (1.80, 80 , 1.00 ,69);
+  
+   </script>
