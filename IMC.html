@@ -5,37 +5,36 @@
 
     <script>
         
-        //programa  que calcula o IMC ( indice de massa corporea )
+         //programa  que calcula o IMC ( indice de massa corporea )
 
 
  
-       function  pulaLinha  () {
+         function  pulaLinha  () {
 
-        document.write("<br");
-        document.write("<br");
+         document.write("<br");
+         document.write("<br");
       
-       }
+         }
 
 
-       function  mostra (frase) {
+         function  mostra (frase) {
                                                      //pare na aula5/5
-       document.write(frase);
-       pulaLinha();
+         document.write(frase);
+         pulaLinha();
 
-       }
+        }
 
 
-       function calculaImc (altura1,peso1,altura2,peso2){
+         function calculaImc (altura1,peso1){
 
          var imc1 = peso1/ (altura1*altura1)
-         var imc2 = peso2 / (altura2*altura2)
-         var imcTotal = imc1 + imc2 ;
+         var imcTotal = imc1 ;
          mostra ("a soma dos imc é "+ imcTotal );
 
-       }
+         }
 
                 //parei na aula 5/5
 
-          calculaImc (1.80, 80 , 1.00 ,69);
+           calculaImc (1.80, 80);
   
-   </script>
+     </script>
