@@ -25,16 +25,18 @@
         }
 
 
-         function calculaImc (altura1,peso1){
+         function calculaImc (altura , peso) {
 
-         var imc1 = peso1/ (altura1*altura1)
-         var imcTotal = imc1 ;
-         mostra ("a soma dos imc é "+ imcTotal );
+          var imc = peso/ ( altura * altura );
+          return imc
 
          }
 
-                //parei na aula 5/5
+         var imcCleber = calculaImc (1.80 , 87);
+         var imcNatalie = calculaImc (1.70 , 70);
 
-           calculaImc (1.80, 80);
-  
+         mostra (imcCleber);
+         mostra (imcNatali);
+
+     
      </script>
